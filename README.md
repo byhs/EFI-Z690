@@ -4,6 +4,8 @@ Latest working macOS: Ventura 13.0.1
 
 Current OpenCore: 0.8.6
 
+![Screenshot 2022-12-13 at 10 30 30 PM](https://user-images.githubusercontent.com/9337847/207340643-182129ca-b1b9-498c-8b8b-99e821397188.png)
+
 ## Hardware
 * Mainboard : Gigabyte Z690 Aorus Elite DDR5
 * CPU : Intel i7-12700K
@@ -21,7 +23,6 @@ Current OpenCore: 0.8.6
 * Universal Control
 
 ## What doesn't work
-* Sleep
 * Sidecar (Black Screen)
 
 ## Bios Configuration
@@ -32,3 +33,15 @@ Current OpenCore: 0.8.6
 * Above 4G decoding - on
 * Fast Boot - off
 * XHCI Hand-off - on
+
+## Changelog
+* v0.1
+  * Initial release.
+* v0.2 
+  * Fixing somtimes black screen issue after verbose on boot.
+    * Remove boot-args -v debug=0x100 keepsyms=1
+    * Set in Misc > Debug, AppleDebug = False, ApplePanic = False, DisableWatchDog = True, Target = 0
+
+## Reference
+* <https://chriswayg.gitbook.io/opencore-visual-beginners-guide/advanced-topics/using-alder-lake>
+* <https://www.reddit.com/r/hackintosh/comments/jwc8s5/comment/gcuz69f/?utm_source=share&utm_medium=web2x&context=3>
