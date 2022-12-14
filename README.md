@@ -23,7 +23,7 @@ Current OpenCore: 0.8.6
 * Universal Control
 
 ## What doesn't work
-* Sidecar (Black Screen)
+* Sidecar (Black Screen, due to the lack of supported iGPU)
 
 ## Bios Configuration
 * Bios Configuration
