@@ -10,10 +10,13 @@ Current OpenCore: 0.8.6
 
 ![Screenshot 2022-12-20 at 1 38 59 PM](https://user-images.githubusercontent.com/9337847/208586303-16629b20-b0bc-4330-89df-44befae378c9.png)
 
+<https://browser.geekbench.com/v5/cpu/19403210>
+
 * GPU Benchmark
 
 ![Screenshot 2022-12-20 at 1 40 52 PM](https://user-images.githubusercontent.com/9337847/208586332-e8e1f9b5-137f-42dc-be44-4da4da247969.png)
 
+<https://browser.geekbench.com/v5/compute/6099655>
 
 ## Hardware
 * Mainboard : Gigabyte Z690 Aorus Elite DDR5
