@@ -331,7 +331,7 @@
                     <key>Comment</key>
                     <string>V2.6.4</string>
                     <key>Enabled</key>
-                    <false/>
+                    <true/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/BlueToolFixup</string>
                     <key>MaxKernel</key>
@@ -828,7 +828,7 @@
             <key>Security</key>
             <dict>
                 <key>AllowNvramReset</key>
-                <false/>
+                <true/>
                 <key>AllowSetDefault</key>
                 <true/>
                 <key>AllowToggleSip</key>
@@ -854,7 +854,7 @@
                 <key>ScanPolicy</key>
                 <integer>0</integer>
                 <key>SecureBootModel</key>
-                <string>Disabled</string>
+                <string>Default</string>
                 <key>Vault</key>
                 <string>Optional</string>
             </dict>
@@ -919,7 +919,7 @@
                     <key>boot-args</key>
                     <string>agdpmod=pikera -wegnoigpu alcid=1 -v</string>
                     <key>csr-active-config</key>
-                    <data>7w8AAA==</data>
+                    <data>AAAAAA==</data>
                     <key>prev-lang:kbd</key>
                     <string>en-US:0</string>
                     <key>run-efi-updater</key>
@@ -1136,6 +1136,16 @@
                     <true/>
                     <key>Path</key>
                     <string>AudioDxe.efi</string>
+                </dict>
+                <dict>
+                    <key>Arguments</key>
+                    <string></string>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Path</key>
+                    <string>ResetNvramEntry.efi</string>
                 </dict>
             </array>
             <key>Input</key>
