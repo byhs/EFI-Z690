@@ -1,10 +1,11 @@
 # Gigabyte Z690 Hackintosh EFI
 
-Latest working macOS: Ventura 13.0.1 
+Latest working macOS: Ventura 13.1
 
-Current OpenCore: 0.8.6
+Current OpenCore: 0.8.7
 
-![Screenshot 2022-12-13 at 10 30 30 PM](https://user-images.githubusercontent.com/9337847/207340643-182129ca-b1b9-498c-8b8b-99e821397188.png)
+![Screenshot 2022-12-26 at 6 45 58 PM](https://user-images.githubusercontent.com/9337847/209540185-8b8c446f-18de-4e9a-bfbc-4b4ff9882ff8.png)
+
 
 * CPU Benchmark
 
@@ -52,7 +53,14 @@ Current OpenCore: 0.8.6
   * Fixing somtimes black screen issue after verbose on boot.
     * Remove boot-args debug=0x100 keepsyms=1
     * Set in Misc > Debug, AppleDebug = False, ApplePanic = False, DisableWatchDog = True, Target = 0
-
+* v0.3
+  * Update OpenCore version. (from 0.8.6 to 0.8.7)
+  * Re-enable System Integrity Protection (SIP) for software update.
+    * NVRAM > 7C436110-AB2A-4BBB-A880-FE41995C9F82 > Remove csd-active-config(EF0F0000)
+  * Misc > Security > SecureBootModel : Disabled > Default (For software updtae, Required NVRAM Reset for booting)
+  * Misc > Security > AllowNvramReset = true
+  * UEFI > Drivers : Added ResetNvramEntry.efi
+  
 ## Reference
 * <https://chriswayg.gitbook.io/opencore-visual-beginners-guide/advanced-topics/using-alder-lake>
 * <https://www.reddit.com/r/hackintosh/comments/jwc8s5/comment/gcuz69f/?utm_source=share&utm_medium=web2x&context=3>
