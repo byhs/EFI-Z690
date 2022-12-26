@@ -38,7 +38,6 @@ Current OpenCore: 0.8.6
 * Sidecar (Black Screen, due to the lack of supported iGPU)
 
 ## Bios Configuration
-* Bios Configuration
 * Hyper Threading - Enabled
 * All P-Cores and E-Cores - Enabled
 * CFG-Lock - off
@@ -51,7 +50,7 @@ Current OpenCore: 0.8.6
   * Initial release.
 * v0.2 
   * Fixing somtimes black screen issue after verbose on boot.
-    * Remove boot-args -v debug=0x100 keepsyms=1
+    * Remove boot-args debug=0x100 keepsyms=1
     * Set in Misc > Debug, AppleDebug = False, ApplePanic = False, DisableWatchDog = True, Target = 0
 
 ## Reference
