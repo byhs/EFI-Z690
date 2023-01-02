@@ -34,6 +34,7 @@ Current OpenCore: 0.8.7
 * iCloud
 * Airplay
 * Universal Control
+* Sleep
 
 ## What doesn't work
 * Sidecar (Black Screen, due to the lack of supported iGPU)
@@ -57,7 +58,7 @@ Current OpenCore: 0.8.7
   * Update OpenCore version. (from 0.8.6 to 0.8.7)
   * Re-enable System Integrity Protection (SIP) for software update.
     * NVRAM > 7C436110-AB2A-4BBB-A880-FE41995C9F82 > Remove csd-active-config(EF0F0000)
-  * Misc > Security > SecureBootModel : Disabled > Default (For software updtae, Required NVRAM Reset for booting)
+  * Misc > Security > SecureBootModel : Disabled > Default (For software update, Required NVRAM Reset for booting)
   * Misc > Security > AllowNvramReset = true
   * UEFI > Drivers : Added ResetNvramEntry.efi
   
