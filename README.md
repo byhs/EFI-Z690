@@ -34,7 +34,7 @@ Current OpenCore: 0.8.7
 * iCloud
 * Airplay
 * Universal Control
-* Sleep
+* Sleep and Wake
 
 ## What doesn't work
 * Sidecar (Black Screen, due to the lack of supported iGPU)
