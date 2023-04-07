@@ -1,8 +1,8 @@
 # Gigabyte Z690 Hackintosh EFI
 
-Latest working macOS: Ventura 13.1
+Latest working macOS: Ventura 13.3
 
-Current OpenCore: 0.8.7
+Current OpenCore: 0.9.1
 
 ![Screenshot 2022-12-26 at 6 45 58 PM](https://user-images.githubusercontent.com/9337847/209540185-8b8c446f-18de-4e9a-bfbc-4b4ff9882ff8.png)
 
@@ -61,7 +61,9 @@ Current OpenCore: 0.8.7
   * Misc > Security > SecureBootModel : Disabled > Default (For software update, Required NVRAM Reset for booting)
   * Misc > Security > AllowNvramReset = true
   * UEFI > Drivers : Added ResetNvramEntry.efi
-  
+* v0.31
+  * Update OpenCore Version. (from 0.8.7 to 0.9.1)
+
 ## Reference
 * <https://chriswayg.gitbook.io/opencore-visual-beginners-guide/advanced-topics/using-alder-lake>
 * <https://www.reddit.com/r/hackintosh/comments/jwc8s5/comment/gcuz69f/?utm_source=share&utm_medium=web2x&context=3>
