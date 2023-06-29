@@ -1,10 +1,11 @@
 # Gigabyte Z690 Hackintosh EFI
 
-Latest working macOS: Ventura 13.3
+Latest working macOS: Ventura 13.4.1
 
-Current OpenCore: 0.9.1
+Current OpenCore: 0.9.3
 
-![Screenshot 2022-12-26 at 6 45 58 PM](https://user-images.githubusercontent.com/9337847/209540185-8b8c446f-18de-4e9a-bfbc-4b4ff9882ff8.png)
+<!-- ![Screenshot 2022-12-26 at 6 45 58 PM](https://user-images.githubusercontent.com/9337847/209540185-8b8c446f-18de-4e9a-bfbc-4b4ff9882ff8.png) -->
+![Screenshot 2023-06-29 at 5 06 06 PM](https://github.com/byhs/EFI-Z690/assets/9337847/2a6a740e-de18-4b6b-8552-fa0050746754)
 
 
 * CPU Benchmark
@@ -63,6 +64,10 @@ Current OpenCore: 0.9.1
   * UEFI > Drivers : Added ResetNvramEntry.efi
 * v0.31
   * Update OpenCore Version. (from 0.8.7 to 0.9.1)
+* v0.32
+  * Update OpenCore Version. (from 0.9.1 to 0.9.3)
+  * Update OS Version. (form 13.3 to 13.4.1)
+  * Upgrade System Memory. (from 32GB to 48GB)
 
 ## Reference
 * <https://chriswayg.gitbook.io/opencore-visual-beginners-guide/advanced-topics/using-alder-lake>
