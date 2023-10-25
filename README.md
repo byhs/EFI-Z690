@@ -65,6 +65,7 @@ Current OpenCore: 0.9.5
   - PCH ASPM : Auto &rarr; Disabled
   - DMI ASPM : Auto &rarr; Disabled
   - Power Loading ASPM : Auto &rarr; Disabled
+  - Native ASPM : Atuo &rarr; Enabled
 
 ## Changelog
 * v0.1
