@@ -1,11 +1,12 @@
 # Gigabyte Z690 Hackintosh EFI
 
-Latest working macOS: Ventura 13.4.1
+Latest working macOS: Sonoma 14.0
 
-Current OpenCore: 0.9.3
+Current OpenCore: 0.9.5
 
 <!-- ![Screenshot 2022-12-26 at 6 45 58 PM](https://user-images.githubusercontent.com/9337847/209540185-8b8c446f-18de-4e9a-bfbc-4b4ff9882ff8.png) -->
-![Screenshot 2023-06-29 at 5 06 06 PM](https://github.com/byhs/EFI-Z690/assets/9337847/2a6a740e-de18-4b6b-8552-fa0050746754)
+<!-- ![Screenshot 2023-06-29 at 5 06 06 PM](https://github.com/byhs/EFI-Z690/assets/9337847/2a6a740e-de18-4b6b-8552-fa0050746754) -->
+![Screenshot 2023-10-25 at 11 09 56 AM](https://github.com/byhs/EFI-Z690/assets/9337847/aa76f51d-cfff-483f-a558-dc10499b5d75)
 
 
 * CPU Benchmark
@@ -31,11 +32,16 @@ Current OpenCore: 0.9.3
 * Audio
 * HDMI/DP
 * All USB ports
-* WIFI / Bluetooth
+* ~~WIFI~~ / Bluetooth
 * iCloud
 * Airplay
-* Universal Control
+* ~~Universal Control~~
 * Sleep and Wake
+
+### Issues
+ * Upgraded to Sonoma, lost Wifi and Universal Control not working.
+ * Several solutions have been proposed, but have not been applied because it causes additional problems.
+   - Enable wifi in Sonoma with Fenvi T919 <https://www.reddit.com/r/hackintosh/comments/170q5wu/enable_wifi_in_sonoma_with_fenvi_t919/>
 
 ## What doesn't work
 * Sidecar (Black Screen, due to the lack of supported iGPU)
@@ -47,6 +53,18 @@ Current OpenCore: 0.9.3
 * Above 4G decoding - on
 * Fast Boot - off
 * XHCI Hand-off - on
+
+### Issues
+* All USB ports randomly freezing
+  - It seems like USB power management and the FV-T919.
+  - <https://www.reddit.com/r/hackintosh/comments/ik27a0/usb_randomly_stops_working_10156_opencore_06/>
+  - <https://www.reddit.com/r/hackintosh/comments/lvlc88/usb_randomly_stops_working/>
+  - <https://www.tonymacx86.com/threads/usb-ports-stop-randomly.315703/>
+* To address this issue, the following BIOS options are being tried out.
+  - PEF ASPM : Auto &rarr; Disabled
+  - PCH ASPM : Auto &rarr; Disabled
+  - DMI ASPM : Auto &rarr; Disabled
+  - Power Loading ASPM : Auto &rarr; Disabled
 
 ## Changelog
 * v0.1
@@ -66,8 +84,11 @@ Current OpenCore: 0.9.3
   * Update OpenCore Version. (from 0.8.7 to 0.9.1)
 * v0.32
   * Update OpenCore Version. (from 0.9.1 to 0.9.3)
-  * Update OS Version. (form 13.3 to 13.4.1)
+  * Upgrade OS Version. (form 13.3 to 13.4.1)
   * Upgrade System Memory. (from 32GB to 48GB)
+* v0.4
+  * Update OpenCore Version. (from 0.9.3 to 0.9.5)
+  * Upgrade OS Version. (Sonoma 14.0)
 
 ## Reference
 * <https://chriswayg.gitbook.io/opencore-visual-beginners-guide/advanced-topics/using-alder-lake>
